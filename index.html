@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>個人簡介</title>
+    <title>個人網站 - jingyi942005</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -11,37 +11,42 @@
             color: #333;
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-image: linear-gradient(to bottom right, #f4f4f9, #e0e0e0);
+        }
+        header {
+            background-color: #007BFF;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
         }
         .profile {
             background-color: #fff;
             max-width: 600px;
-            margin: 20px;
+            margin: 20px auto;
             padding: 30px;
             border: 1px solid #ddd;
             border-radius: 10px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             text-align: center;
-            transition: transform 0.3s;
-        }
-        .profile:hover {
-            transform: translateY(-5px);
         }
         .profile img {
             max-width: 150px;
             border-radius: 50%;
             margin-bottom: 20px;
-            border: 3px solid #007BFF;
+            border: 3px solid #FF6347; /* Tomato Red */
         }
         .profile h1 {
             font-size: 28px;
             margin: 10px 0;
-            color: #007BFF;
-            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+            color: #FF6347; /* Tomato Red */
         }
         .profile p {
             font-size: 16px;
@@ -58,15 +63,31 @@
             color: #0056b3;
             text-decoration: underline;
         }
+        footer {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 14px;
+            color: #666;
+        }
     </style>
 </head>
 <body>
-    <div class="profile">
+    <header>
+        <h1>歡迎來到我的個人網站</h1>
+        <nav>
+            <a href="#about">關於我</a>
+            <a href="#contact">聯繫我</a>
+        </nav>
+    </header>
+    <div class="profile" id="about">
         <img src="your-photo.jpg" alt="你的照片">
         <h1>jingyi942005</h1>
         <p>你好，我是jingyi942005，目前是一名[學生]。我擁有[你的專業背景或學歷]，並且對[你的興趣或專長]有濃厚的興趣。在工作中，我主要負責[你的主要工作內容]，並且在[你的領域]有豐富的經驗。</p>
         <p>在空閒時間，我喜歡[你的興趣或愛好]，這讓我能夠保持創意和靈感。如果你對我的工作或專業有任何問題，歡迎隨時聯繫我。</p>
-        <p>聯繫方式：<a href="mailto:C112156128@nkust.edu.tw">C112156128@nkust.edu.tw</a></p>
     </div>
+    <footer id="contact">
+        <p>聯繫方式：<a href="mailto:C112156128@nkust.edu.tw">C112156128@nkust.edu.tw</a></p>
+        <p>&copy; 2024 jingyi942005. 版權所有。</p>
+    </footer>
 </body>
 </html>
