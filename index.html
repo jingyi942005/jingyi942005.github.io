@@ -11,10 +11,10 @@
             color: #333;
             margin: 0;
             padding: 0;
-            background-image: linear-gradient(to bottom right, #ff9a9e, #fad0c4);
+            background-image: linear-gradient(to bottom right, #ff6347, #007bff);
         }
         header {
-            background-color: #007BFF;
+            background-color: #0056b3;
             padding: 20px;
             text-align: center;
             color: white;
@@ -28,7 +28,7 @@
             transition: color 0.3s;
         }
         nav a:hover {
-            color: #FF6347; /* Tomato Red */
+            color: #ff6347; /* Tomato Red */
         }
         .profile {
             background-color: #ffffff;
@@ -38,13 +38,13 @@
             border-radius: 10px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
             text-align: center;
-            border: 5px solid #FF6347; /* Tomato Red */
+            border: 5px solid #007BFF; /* Blue */
         }
         .profile img {
             max-width: 150px;
             border-radius: 50%;
             margin-bottom: 20px;
-            border: 5px solid #007BFF;
+            border: 5px solid #ff6347; /* Tomato Red */
             transition: transform 0.3s;
         }
         .profile img:hover {
@@ -53,13 +53,25 @@
         .profile h1 {
             font-size: 28px;
             margin: 10px 0;
-            color: #FF6347; /* Tomato Red */
+            color: #ff6347; /* Tomato Red */
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
         }
         .profile p {
             font-size: 16px;
             line-height: 1.6;
             color: #666;
+        }
+        .interests {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .interest {
+            text-align: center;
+        }
+        .interest img {
+            width: 60px; /* 調整插圖大小 */
+            margin-bottom: 10px;
         }
         .profile a {
             color: #007BFF;
@@ -92,6 +104,21 @@
         <h1>jingyi942005</h1>
         <p>你好，我是jingyi942005，目前是一名[學生]。我擁有[你的專業背景或學歷]，並且對[你的興趣或專長]有濃厚的興趣。在工作中，我主要負責[你的主要工作內容]，並且在[你的領域]有豐富的經驗。</p>
         <p>在空閒時間，我喜歡[你的興趣或愛好]，這讓我能夠保持創意和靈感。如果你對我的工作或專業有任何問題，歡迎隨時聯繫我。</p>
+        
+        <div class="interests">
+            <div class="interest">
+                <img src="icon1.png" alt="興趣1">
+                <p>[興趣1]</p>
+            </div>
+            <div class="interest">
+                <img src="icon2.png" alt="興趣2">
+                <p>[興趣2]</p>
+            </div>
+            <div class="interest">
+                <img src="icon3.png" alt="興趣3">
+                <p>[興趣3]</p>
+            </div>
+        </div>
     </div>
     <footer id="contact">
         <p>聯繫方式：<a href="mailto:C112156128@nkust.edu.tw">C112156128@nkust.edu.tw</a></p>
